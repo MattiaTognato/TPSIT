@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using namespace std; //commento per provare git
 struct cell {
 	int val = 0;			//valore della cella
 	cell* next = nullptr;	//puntatore alla cella successiva
@@ -14,7 +14,7 @@ void enqueue(queue*& _q, int n) {
 	cell* c = new cell;			//creo nuova cella
 	c->val = n;					//inserisco valore alla nuova cella
 
-	if (_q->first == nullptr)	//caso particolare in cui la coda è 
+	if (_q->first == nullptr)	//caso particolare in cui la coda ï¿½ 
 	{
 		_q->first = c;			//la prima e l'ultima cella corrisponderanno alla stessa cella
 		_q->last = c;
@@ -22,7 +22,7 @@ void enqueue(queue*& _q, int n) {
 	else
 	{
 		_q->last->next = c;		//aggiungo alla coda la nuova cella
-		_q->last = c;			//ora l'ultima cella è quella nuova
+		_q->last = c;			//ora l'ultima cella ï¿½ quella nuova
 	}
 }
 
@@ -45,7 +45,7 @@ int dequeue(queue*& _q)
 int getQueueLength(queue*& _q)
 {
 	int length = 0;
-	if (_q->first == nullptr)		//se la coda è vuota ritorno 0
+	if (_q->first == nullptr)		//se la coda ï¿½ vuota ritorno 0
 	{
 		return length;
 	}
