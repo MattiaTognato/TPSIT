@@ -1,0 +1,127 @@
+\hypertarget{queue_8cpp}{}\doxysection{queue.\+cpp File Reference}
+\label{queue_8cpp}\index{queue.cpp@{queue.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcell}{cell}}
+\begin{DoxyCompactList}\small\item\em Single Node of the queue. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structqueue}{queue}}
+\begin{DoxyCompactList}\small\item\em Queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{queue_8cpp_ad050aeb19ff7e79398530acbec7b9e4f}{enqueue}} (\mbox{\hyperlink{structqueue}{queue}} $\ast$\&\+\_\+q, int n)
+\begin{DoxyCompactList}\small\item\em Add a node at the end of the queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{queue_8cpp_a23f187e7c3a8d9919be23b811552d188}{dequeue}} (\mbox{\hyperlink{structqueue}{queue}} $\ast$\&\+\_\+q)
+\begin{DoxyCompactList}\small\item\em Remove the firt node of the queue and return its value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{queue_8cpp_afdafe530b89013197a243143fcb721ce}{get\+Queue\+Length}} (\mbox{\hyperlink{structqueue}{queue}} $\ast$\&\+\_\+q)
+\begin{DoxyCompactList}\small\item\em Return the number of node in the Queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{queue_8cpp_a3dce7bded1b31c58031f0c9eb6ae07bb}{delete\+Queue}} (\mbox{\hyperlink{structqueue}{queue}} $\ast$\&\+\_\+q)
+\begin{DoxyCompactList}\small\item\em Remove all node from the Queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{queue_8cpp_a2f8a56708f6f5192addbeb86c2ca0fbe}{show\+Val}} (\mbox{\hyperlink{structqueue}{queue}} $\ast$\&\+\_\+q)
+\begin{DoxyCompactList}\small\item\em Print in console all value in the Stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{queue_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{queue_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Tognato Mattia (\href{mailto:6190097@itisrossi.vi.it}{\texttt{ 6190097@itisrossi.\+vi.\+it}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/02-\/03
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{queue_8cpp_a3dce7bded1b31c58031f0c9eb6ae07bb}\label{queue_8cpp_a3dce7bded1b31c58031f0c9eb6ae07bb}} 
+\index{queue.cpp@{queue.cpp}!deleteQueue@{deleteQueue}}
+\index{deleteQueue@{deleteQueue}!queue.cpp@{queue.cpp}}
+\doxysubsubsection{\texorpdfstring{deleteQueue()}{deleteQueue()}}
+{\footnotesize\ttfamily void delete\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structqueue}{queue}} $\ast$\&}]{\+\_\+q }\end{DoxyParamCaption})}
+
+
+
+Remove all node from the Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+q} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{queue_8cpp_a23f187e7c3a8d9919be23b811552d188}\label{queue_8cpp_a23f187e7c3a8d9919be23b811552d188}} 
+\index{queue.cpp@{queue.cpp}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!queue.cpp@{queue.cpp}}
+\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily int dequeue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structqueue}{queue}} $\ast$\&}]{\+\_\+q }\end{DoxyParamCaption})}
+
+
+
+Remove the firt node of the queue and return its value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{queue_8cpp_ad050aeb19ff7e79398530acbec7b9e4f}\label{queue_8cpp_ad050aeb19ff7e79398530acbec7b9e4f}} 
+\index{queue.cpp@{queue.cpp}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!queue.cpp@{queue.cpp}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structqueue}{queue}} $\ast$\&}]{\+\_\+q,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Add a node at the end of the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+q} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{queue_8cpp_afdafe530b89013197a243143fcb721ce}\label{queue_8cpp_afdafe530b89013197a243143fcb721ce}} 
+\index{queue.cpp@{queue.cpp}!getQueueLength@{getQueueLength}}
+\index{getQueueLength@{getQueueLength}!queue.cpp@{queue.cpp}}
+\doxysubsubsection{\texorpdfstring{getQueueLength()}{getQueueLength()}}
+{\footnotesize\ttfamily int get\+Queue\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structqueue}{queue}} $\ast$\&}]{\+\_\+q }\end{DoxyParamCaption})}
+
+
+
+Return the number of node in the Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{queue_8cpp_a2f8a56708f6f5192addbeb86c2ca0fbe}\label{queue_8cpp_a2f8a56708f6f5192addbeb86c2ca0fbe}} 
+\index{queue.cpp@{queue.cpp}!showVal@{showVal}}
+\index{showVal@{showVal}!queue.cpp@{queue.cpp}}
+\doxysubsubsection{\texorpdfstring{showVal()}{showVal()}}
+{\footnotesize\ttfamily void show\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structqueue}{queue}} $\ast$\&}]{\+\_\+q }\end{DoxyParamCaption})}
+
+
+
+Print in console all value in the Stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+q} & \\
+\hline
+\end{DoxyParams}

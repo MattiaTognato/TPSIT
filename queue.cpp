@@ -1,15 +1,37 @@
+/**
+ * @file queue.cpp
+ * @author Tognato Mattia (6190097@itisrossi.vi.it)
+ * @brief 
+ * @version 0.1
+ * @date 2022-02-03
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include <iostream>
 using namespace std; //commento per provare git
+/**
+ * @brief Single Node of the queue
+ * 
+ */
 struct cell {
-	int val = 0;			//valore della cella
-	cell* next = nullptr;	//puntatore alla cella successiva
+	int val = 0;			//!Value of the node
+	cell* next = nullptr;	//!<Point to next node of the queue
 };
-
+/**
+ * @brief Queue
+ * 
+ */
 struct queue {
-	cell* first = nullptr;	//valore inserito per primo
-	cell* last = nullptr;	//valore inserito per ultimo
+	cell* first = nullptr;	//!<Point to the first node of the queue
+	cell* last = nullptr;	//!<Point to the last node of the queue
 };
-
+/**
+ * @brief Add a node at the end of the queue
+ * 
+ * @param _q 
+ * @param n 
+ */
 void enqueue(queue*& _q, int n) {
 	cell* c = new cell;			//creo nuova cella
 	c->val = n;					//inserisco valore alla nuova cella
@@ -25,7 +47,12 @@ void enqueue(queue*& _q, int n) {
 		_q->last = c;			//ora l'ultima cella � quella nuova
 	}
 }
-
+/**
+ * @brief Remove the firt node of the queue and return its value
+ * 
+ * @param _q 
+ * @return int 
+ */
 int dequeue(queue*& _q)
 {
 	if (_q->first == nullptr)
@@ -42,6 +69,12 @@ int dequeue(queue*& _q)
 
 	return val;
 }
+/**
+ * @brief Return the number of node in the Queue
+ * 
+ * @param _q 
+ * @return int 
+ */
 int getQueueLength(queue*& _q)
 {
 	int length = 0;
@@ -55,6 +88,11 @@ int getQueueLength(queue*& _q)
 	}
 	return length;
 }
+/**
+ * @brief Remove all node from the Queue
+ * 
+ * @param _q 
+ */
 void deleteQueue(queue*& _q)
 {
 	int lenght = getQueueLength(_q);	//prendo la lunghezza della coda
@@ -63,6 +101,11 @@ void deleteQueue(queue*& _q)
 		dequeue(_q);					//dequeue di tutte le celle della coda
 	}
 }
+/**
+ * @brief Print in console all value in the Stack
+ * 
+ * @param _q 
+ */
 void showVal(queue*& _q)
 {
 	int i = 0;

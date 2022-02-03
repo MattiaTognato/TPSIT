@@ -1,17 +1,47 @@
+/*! \mainpage Stack & Queue
+ *
+ *
+ * Stack and Queue in cpp
+ *
+ */
+
+/**
+ * @file stack.cpp
+ * @author Tognato Mattia (6190097@itisrossi.vi.it)
+ * @brief 
+ * @version 0.1
+ * @date 2022-02-03
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include <iostream>
 using namespace std;
+/**
+ * @brief Single Node of the stack
+ * 
+ */
 struct cell {
-	int val = 0;			//valore della cella
-	cell* next = nullptr;	//puntatore alla cella successiva
+	int val = 0;			//!Value of the node
+	cell* next = nullptr;	//!<Point to next node of the stack
 };
 
-
+/**
+ * @brief Push a value in the stack.
+ * 
+ * 
+ * First parameter is the root of the stack
+ * second parameter is the int value.
+ * 
+ * @param _r 
+ * @param n 
+ */
 void push(cell*& _r, int n) {
 	cell* c = new cell;			//creo nuova cella
 	c->val = n;					//inserisco valore alla nuova cella
 	if (_r == nullptr)
 	{
-		_r = c;					//se lo stack è vuoto aggiungi la cella
+		_r = c;					//se lo stack ï¿½ vuoto aggiungi la cella
 	}
 	else
 	{
@@ -20,6 +50,12 @@ void push(cell*& _r, int n) {
 	}
 
 }
+/**
+ * @brief Remove a node and return the value 
+ * 
+ * @param _r 
+ * @return int 
+ */
 int pop(cell*& _r)
 {
 	if (_r == nullptr)
@@ -34,10 +70,16 @@ int pop(cell*& _r)
 
 	return val;
 }
+/**
+ * @brief Return the number of node in the Stack
+ * 
+ * @param _r 
+ * @return int 
+ */
 int getStackLength(cell*& _r)
 {
 	int length = 0;
-	if (_r == nullptr)		//se lo stack è vuoto ritorno 0
+	if (_r == nullptr)		//se lo stack ï¿½ vuoto ritorno 0
 	{
 		return length;
 	}
@@ -47,6 +89,11 @@ int getStackLength(cell*& _r)
 	}
 	return length;
 }
+/**
+ * @brief Remove all node from the Stack
+ * 
+ * @param _r 
+ */
 void deleteStack(cell*& _r)
 {
 	int lenght = getStackLength(_r);	//prendo la lunghezza dello stack
@@ -55,6 +102,11 @@ void deleteStack(cell*& _r)
 		pop(_r);					//pop di tutte le celle dello stack
 	}
 }
+/**
+ * @brief Print in console all value in the Stack
+ * 
+ * @param _r 
+ */
 void showVal(cell*& _r)
 {
 	int i = 0;

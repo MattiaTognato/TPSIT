@@ -1,0 +1,127 @@
+\hypertarget{stack_8cpp}{}\doxysection{stack.\+cpp File Reference}
+\label{stack_8cpp}\index{stack.cpp@{stack.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcell}{cell}}
+\begin{DoxyCompactList}\small\item\em Single Node of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{stack_8cpp_a2848d62aaf6635a5bdad8a88cc58c10e}{push}} (\mbox{\hyperlink{structcell}{cell}} $\ast$\&\+\_\+r, int n)
+\begin{DoxyCompactList}\small\item\em Push a value in the stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{stack_8cpp_a8addffc0b1a05f3c24b94610ad1853bd}{pop}} (\mbox{\hyperlink{structcell}{cell}} $\ast$\&\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Remove a node and return the value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{stack_8cpp_a58e54244e347c338dcfd9502d9891a55}{get\+Stack\+Length}} (\mbox{\hyperlink{structcell}{cell}} $\ast$\&\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Return the number of node in the Stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8cpp_abc5d1f1a7dfba83333fc6851b570e331}{delete\+Stack}} (\mbox{\hyperlink{structcell}{cell}} $\ast$\&\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Remove all node from the Stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8cpp_ae3deb39a5235ca67d9c0cec4a67b21f6}{show\+Val}} (\mbox{\hyperlink{structcell}{cell}} $\ast$\&\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Print in console all value in the Stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stack_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{stack_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Tognato Mattia (\href{mailto:6190097@itisrossi.vi.it}{\texttt{ 6190097@itisrossi.\+vi.\+it}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/02-\/03
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stack_8cpp_abc5d1f1a7dfba83333fc6851b570e331}\label{stack_8cpp_abc5d1f1a7dfba83333fc6851b570e331}} 
+\index{stack.cpp@{stack.cpp}!deleteStack@{deleteStack}}
+\index{deleteStack@{deleteStack}!stack.cpp@{stack.cpp}}
+\doxysubsubsection{\texorpdfstring{deleteStack()}{deleteStack()}}
+{\footnotesize\ttfamily void delete\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcell}{cell}} $\ast$\&}]{\+\_\+r }\end{DoxyParamCaption})}
+
+
+
+Remove all node from the Stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8cpp_a58e54244e347c338dcfd9502d9891a55}\label{stack_8cpp_a58e54244e347c338dcfd9502d9891a55}} 
+\index{stack.cpp@{stack.cpp}!getStackLength@{getStackLength}}
+\index{getStackLength@{getStackLength}!stack.cpp@{stack.cpp}}
+\doxysubsubsection{\texorpdfstring{getStackLength()}{getStackLength()}}
+{\footnotesize\ttfamily int get\+Stack\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcell}{cell}} $\ast$\&}]{\+\_\+r }\end{DoxyParamCaption})}
+
+
+
+Return the number of node in the Stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8cpp_a8addffc0b1a05f3c24b94610ad1853bd}\label{stack_8cpp_a8addffc0b1a05f3c24b94610ad1853bd}} 
+\index{stack.cpp@{stack.cpp}!pop@{pop}}
+\index{pop@{pop}!stack.cpp@{stack.cpp}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcell}{cell}} $\ast$\&}]{\+\_\+r }\end{DoxyParamCaption})}
+
+
+
+Remove a node and return the value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8cpp_a2848d62aaf6635a5bdad8a88cc58c10e}\label{stack_8cpp_a2848d62aaf6635a5bdad8a88cc58c10e}} 
+\index{stack.cpp@{stack.cpp}!push@{push}}
+\index{push@{push}!stack.cpp@{stack.cpp}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcell}{cell}} $\ast$\&}]{\+\_\+r,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Push a value in the stack. 
+
+First parameter is the root of the stack second parameter is the int value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+r} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8cpp_ae3deb39a5235ca67d9c0cec4a67b21f6}\label{stack_8cpp_ae3deb39a5235ca67d9c0cec4a67b21f6}} 
+\index{stack.cpp@{stack.cpp}!showVal@{showVal}}
+\index{showVal@{showVal}!stack.cpp@{stack.cpp}}
+\doxysubsubsection{\texorpdfstring{showVal()}{showVal()}}
+{\footnotesize\ttfamily void show\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcell}{cell}} $\ast$\&}]{\+\_\+r }\end{DoxyParamCaption})}
+
+
+
+Print in console all value in the Stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+r} & \\
+\hline
+\end{DoxyParams}
