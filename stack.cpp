@@ -33,8 +33,8 @@ struct cell {
  * First parameter is the root of the stack
  * second parameter is the int value.
  * 
- * @param _r 
- * @param n 
+ * @param _r root of the stack
+ * @param n value
  */
 void push(cell*& _r, int n) {
 	cell* c = new cell;			//creo nuova cella
@@ -53,8 +53,8 @@ void push(cell*& _r, int n) {
 /**
  * @brief Remove a node and return the value 
  * 
- * @param _r 
- * @return int 
+ * @param _r root of the stack
+ * @return int value of the popped node
  */
 int pop(cell*& _r)
 {
@@ -73,8 +73,8 @@ int pop(cell*& _r)
 /**
  * @brief Return the number of node in the Stack
  * 
- * @param _r 
- * @return int 
+ * @param _r root of the stack
+ * @return lenght
  */
 int getStackLength(cell*& _r)
 {
@@ -92,7 +92,7 @@ int getStackLength(cell*& _r)
 /**
  * @brief Remove all node from the Stack
  * 
- * @param _r 
+ * @param _r root of the stack
  */
 void deleteStack(cell*& _r)
 {
@@ -105,7 +105,7 @@ void deleteStack(cell*& _r)
 /**
  * @brief Print in console all value in the Stack
  * 
- * @param _r 
+ * @param _r root of the stack
  */
 void showVal(cell*& _r)
 {

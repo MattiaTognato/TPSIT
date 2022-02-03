@@ -29,8 +29,8 @@ struct queue {
 /**
  * @brief Add a node at the end of the queue
  * 
- * @param _q 
- * @param n 
+ * @param _q root of the queue
+ * @param n value
  */
 void enqueue(queue*& _q, int n) {
 	cell* c = new cell;			//creo nuova cella
@@ -50,8 +50,8 @@ void enqueue(queue*& _q, int n) {
 /**
  * @brief Remove the firt node of the queue and return its value
  * 
- * @param _q 
- * @return int 
+ * @param _q root of the queue
+ * @return int return the value of the dequeued node
  */
 int dequeue(queue*& _q)
 {
@@ -72,8 +72,8 @@ int dequeue(queue*& _q)
 /**
  * @brief Return the number of node in the Queue
  * 
- * @param _q 
- * @return int 
+ * @param _q root of the queue
+ * @return int lenght
  */
 int getQueueLength(queue*& _q)
 {
@@ -91,7 +91,7 @@ int getQueueLength(queue*& _q)
 /**
  * @brief Remove all node from the Queue
  * 
- * @param _q 
+ * @param _q root of the queue
  */
 void deleteQueue(queue*& _q)
 {
@@ -104,7 +104,7 @@ void deleteQueue(queue*& _q)
 /**
  * @brief Print in console all value in the Stack
  * 
- * @param _q 
+ * @param _q root of the queue
  */
 void showVal(queue*& _q)
 {
