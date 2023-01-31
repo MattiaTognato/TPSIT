@@ -1,1 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro>
+        <titolo>The Catcher in the Rye</titolo>
+        <autori>J.D. Salinger</autori>
+        <codice>9780316769488</codice>
+        <dewey>813.54</dewey>
+    </libro>
+    <libro>
+        <titolo>To Kill a Mockingbird</titolo>
+        <autori>Harper Lee</autori>
+        <codice>9780446310789</codice>
+        <dewey>813.52</dewey>
+    </libro>
+    <libro>
+        <titolo>The Great Gatsby</titolo>
+        <autori>F. Scott Fitzgerald</autori>
+        <codice>9780743273565</codice>
+        <dewey>813.52</dewey>
+    </libro>
+    <libro>
+        <titolo>Pride and Prejudice</titolo>
+        <autori>Jane Austen</autori>
+        <codice>9780141199702</codice>
+        <dewey>823.7</dewey>
+    </libro>
+    <libro>
+        <titolo>1984</titolo>
+        <autori>George Orwell</autori>
+        <codice>9780451524935</codice>
+        <dewey>823.91</dewey>
+    </libro>
+    <libro>
+        <titolo>The Diary of a Young Girl</titolo>
+        <autori>Anne Frank</autori>
+        <codice>9780679783295</codice>
+        <dewey>940.5318</dewey>
+    </libro>
+    <libro>
+        <titolo>The Lord of the Rings</titolo>
+        <autori>J.R.R. Tolkien</autori>
+        <codice>9780544003415</codice>
+        <dewey>823.912</dewey>
+    </libro>
+    <libro>
+        <titolo>The Hobbit</titolo>
+        <autori>J.R.R. Tolkien</autori>
+        <codice>9780547928197</codice>
+        <dewey>823.912</dewey>
+    </libro>
+    <libro>
+        <titolo>Animal Farm</titolo>
+        <autori>George Orwell</autori>
+        <codice>9780451526342</codice>
+        <dewey>823.91</dewey>
+    </libro>
+    <libro>
+        <titolo>One Hundred Years of Solitude</titolo>
+        <autori>Gabriel Garcia Marquez</autori>
+        <codice>9780060883287</codice>
+        <dewey>863.64</dewey>
+    </libro>
+    <libro>
+        <titolo>The Silence of the Lambs</titolo>
+        <autori>Thomas Harris</autori>
+        <codice>9780345806693</codice>
+        <dewey>813.54</dewey>
+    </libro>
+    <libro>
+        <titolo>The Hitchhiker's Guide to the Galaxy</titolo>
+        <autori>Douglas Adams</autori>
+        <codice>9780345391803</codice>
+        <dewey>823.914</dewey>
+    </libro>
+</biblioteca>
